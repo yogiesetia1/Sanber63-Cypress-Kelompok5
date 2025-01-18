@@ -17,7 +17,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - ______________________________
 4. Rakhma Yuli Affiyanti
 - Task :
-- Github Username :
+- Github Username : rakhmayuli
 - ______________________________
 5. Tina Oktapiani
 - Task :
