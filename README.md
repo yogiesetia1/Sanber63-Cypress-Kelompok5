@@ -21,7 +21,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - ______________________________
 5. Tina Oktapiani
 - Task :
-- Github Username :TinaOktapiani29
+- Github Username : TinaOktapiani29
 - ______________________________
 6. Savira Nabillah
 - Task :
