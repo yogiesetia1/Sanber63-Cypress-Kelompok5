@@ -3,9 +3,11 @@ describe('template spec', () => {
     // Callback Base url 
     cy.visit('/')
 
-    
-
-    // Proceed to Checkout section [Yogi]
+  })
+})
+describe('Proceed To Checkout Section [Yogi]', () => {
+  it('passes', () => {
+    // Base url
     cy.visit('/checkout/#shipping')
 
   })
