@@ -5,7 +5,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - TEAM 5 Members 👨‍💻👩‍💻:
 1. Anisah Mutmainah
 - Task :
-- Github Username :
+- Github Username : anisahmutmainah
 - ______________________________
 2. Nesa Cristin Natalia Batubara
 - Task :
@@ -17,18 +17,18 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - ______________________________
 4. Rakhma Yuli Affiyanti
 - Task :
-- Github Username :
+- Github Username : rakhmayuli
 - ______________________________
 5. Tina Oktapiani
-- Task :
-- Github Username :
+- Task : My Account > Edit Account Information & Edit Address
+- Github Username : TinaOktapiani29
 - ______________________________
 6. Savira Nabillah
 - Task :
 - Github Username :
 - ______________________________
 7. Yogie Setiawan
-- Task : 
+- Task : Proceed to checkout
 - Github Username : yogiesetia1
 - ______________________________
 
