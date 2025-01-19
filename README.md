@@ -28,7 +28,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - Github Username :
 - ______________________________
 7. Yogie Setiawan
-- Task : 
+- Task : Proceed to checkout
 - Github Username : yogiesetia1
 - ______________________________
 
