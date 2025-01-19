@@ -6,7 +6,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   browser: 'chrome', //Browser defaul saat menjalankan e2e
   e2e: {
-    baseUrl: 'https://www.demoblaze.com/',
+    baseUrl: 'https://magento.softwaretestingboard.com/',
     viewportHeight : 720,
     viewportHeight : 1280,
     setupNodeEvents(on, config) {
