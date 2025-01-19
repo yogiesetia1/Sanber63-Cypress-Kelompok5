@@ -25,13 +25,11 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, password) => {
+  cy.visit('/login');
   cy.get('#email').type(email);
-  cy.get('#pass').type(password);
-  cy.get('#send2').click();
+  cy.get('#password').type(password);
+  cy.get('button[type="submit"]').click();
 });
 
-Cypress.Commands.add('logout', () => {
-  cy.get('.logout-link').click();
-});
 
   
