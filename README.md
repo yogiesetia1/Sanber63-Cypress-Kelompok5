@@ -17,10 +17,10 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - ______________________________
 4. Rakhma Yuli Affiyanti
 - Task :
-- Github Username :
+- Github Username : rakhmayuli
 - ______________________________
 5. Tina Oktapiani
-- Task :
+- Task : My Account > Edit Account Information & Edit Address
 - Github Username : TinaOktapiani29
 - ______________________________
 6. Savira Nabillah
@@ -28,7 +28,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - Github Username :
 - ______________________________
 7. Yogie Setiawan
-- Task : 
+- Task : Proceed to checkout
 - Github Username : yogiesetia1
 - ______________________________
 

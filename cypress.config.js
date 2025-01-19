@@ -1,16 +1,14 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  viewportHeight: 720,
+  viewportWidth: 1280,
+  chromeWebSecurity: false,
+  browser: 'chrome', //Browser defaul saat menjalankan e2e
   e2e: {
-    baseUrl: 'https://magento.softwaretestingboard.com/',
-    viewportWidth: 1280,
-    viewportHeight: 720,
-    retries: {
-      runMode: 2,
-      openMode: 0,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
     },
-    video: true,
-    screenshotOnRunFailure: true,
   },
 });
 

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 node_modules/
-.DS_Store
 cypress/screenshots/
 cypress/videos/
+=======
+cypress
+>>>>>>> 71debb10f60528162b892c5d8a95a2ce05397a5e
