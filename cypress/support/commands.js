@@ -28,7 +28,7 @@ Cypress.Commands.add('login', (email, password) => {
   cy.visit('https://www.demoblaze.com'); // Kunjungi halaman utama
   cy.get('#login2').should('be.visible').click(); // Klik tombol login untuk membuka modal
   cy.get('#logInModal').should('be.visible'); // Verifikasi modal login muncul
-  cy.get('#loginusername').type(email);
+  cy.get('#loginusername').type(email); //isi email
   cy.get('#loginpassword').type(password);
   cy.get('button[onclick="logIn()"]').click(); // Klik tombol login
 });
