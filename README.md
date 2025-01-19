@@ -20,7 +20,7 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 - Github Username : rakhmayuli
 - ______________________________
 5. Tina Oktapiani
-- Task :
+- Task : My Account > Edit Account Information & Edit Address
 - Github Username : TinaOktapiani29
 - ______________________________
 6. Savira Nabillah
