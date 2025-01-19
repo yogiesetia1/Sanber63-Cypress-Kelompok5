@@ -4,7 +4,18 @@ Automation Testing Website Demoblaze with Cypress Collaboration 🤝🤝
 
 - TEAM 5 Members 👨‍💻👩‍💻:
 1. Anisah Mutmainah
-- Task :
+- Task : Fitur Login 
+Pada Pengujian Fitur Login ini terdapat beberapa skenario pengujiannya yaitu : 
+ 1. Skenario Pengujian Positif : melakukan login dengan username dan password yang benar
+ 2. Skenario Pengujian Negatif : 
+    - Mencoba melakukan login tanpa memasukkan username 
+    - Mencoba login dengan memasukan password yang salah
+ 3. Skenario Pengujian Login Custom Command positive :
+    - Mencoba melakukan login dengan username dan password yang benar dan menggunakan custom command
+ 4. Skenario Pengujian login  Custom Command negative : 
+   - mencoba melakukan login dengan username dan password yang salah dan menggunakan custom command
+ 5. Skenario pengujian menggunakan POM : 
+    - Mencoba melakukan login dengan username dan password yang benar dan menggunakan POM
 - Github Username : anisahmutmainah
 - ______________________________
 2. Nesa Cristin Natalia Batubara
