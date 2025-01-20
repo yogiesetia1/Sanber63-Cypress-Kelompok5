@@ -80,7 +80,7 @@ Cypress.Commands.add('verifyErrorMessage', (message) => {
 // End Tina Oktapiani
 
 
-// Proceed to checkout command section [do not edit!!]
+// Proceed to checkout custom command section [do not edit!!]
 Cypress.Commands.add('clickButton', (selector) => {
   cy.get(selector).click()
 })
