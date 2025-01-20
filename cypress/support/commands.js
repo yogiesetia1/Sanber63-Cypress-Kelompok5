@@ -23,7 +23,7 @@ Cypress.Commands.add('editUsername', (firstname, lastname) => {
   if(firstname){
     cy.get('#firstname').type(firstname)
   }
-  if(firstname){
+  if(lastname){
     cy.get('#lastname').type(lastname)
   }
   cy.get('.save').click()
@@ -32,8 +32,9 @@ Cypress.Commands.add('editUsername', (firstname, lastname) => {
 
 Cypress.Commands.add('editEmail', (email, password) => {
 
-  cy.visit('/customer/account/edit/')
-  cy.get('#email').type(email)
+  if(email){
+    cy.get('#email').type(email)
+  }
   cy.get('#password').type(password)
   cy.get('.save').click()
 
@@ -41,8 +42,9 @@ Cypress.Commands.add('editEmail', (email, password) => {
 
 Cypress.Commands.add('ChangesPassword', (currentpassword, newpassword, confirmpassword) => {
 
-  cy.visit('/customer/account/edit/')
-  cy.get('#current-password').type(currentpassword)
+  if(currentpassword){
+    cy.get('#current-password').type(currentpassword)
+  }
   cy.get('#new-password').type(newpassword)
   cy.get('#confirm-password').type(confirmpassword)
   cy.get('.save').click()
