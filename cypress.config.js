@@ -7,6 +7,7 @@ module.exports = defineConfig({
   browser: 'chrome', //Browser defaul saat menjalankan e2e
 
   screenshotsFolder: 'cypress/screenshots', // Folder penyimpanan screenshot
+  screenshots: true, //aktifkan perekaman screenshoot
   videosFolder: 'cypress/videos', // Folder penyimpanan video
   video: true, // Aktifkan perekaman video
   videoCompression: 32, // Kompresi video
