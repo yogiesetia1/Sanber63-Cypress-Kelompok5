@@ -5,6 +5,11 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   chromeWebSecurity: false,
   browser: 'chrome', //Browser defaul saat menjalankan e2e
+
+  screenshotsFolder: 'cypress/screenshots', // Folder penyimpanan screenshot
+  videosFolder: 'cypress/videos', // Folder penyimpanan video
+  video: true, // Aktifkan perekaman video
+  videoCompression: 32, // Kompresi video
   e2e: {
     baseUrl: 'https://magento.softwaretestingboard.com/',
     viewportHeight : 720,

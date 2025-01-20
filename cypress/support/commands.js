@@ -24,15 +24,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+//proses login
 Cypress.Commands.add('login', (email, password) => {
-  cy.visit('https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'); // Kunjungi halaman utama
-  // cy.get('.header .authorization-link > a').click();  // Klik tombol login di header
-  // cy.get('#login-form').should('be.visible'); // Verifikasi form login muncul
-  cy.get('#email').type(email); // Isi email
-  cy.get('#pass').type(password); // Isi password
-  cy.get('#send2').click(); // Klik tombol login
-  // cy.get('.greet').should('contain', 'Welcome'); // Verifikasi login berhasil
+  cy.visit('https://magento.softwaretestingboard.com/customer/account/login');
+  if (email) cy.get('#email').type(email);
+  if (password) cy.get('#pass').type(password);
+  cy.get('#send2').click();
 });
+
 
 
 // Proceed to checkout command section [do not edit!!]
