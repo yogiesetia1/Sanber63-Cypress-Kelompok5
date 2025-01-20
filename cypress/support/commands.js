@@ -33,5 +33,21 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get('button[onclick="logIn()"]').click(); // Klik tombol login
 });
 
+// Proceed to checkout command section [do not edit!!]
+Cypress.Commands.add('clickButton', (selector) => {
+  cy.get(selector).click()
+})
 
+Cypress.Commands.add('inputAddress', (email, firstName, lastName, company, streetAddress, city, state, zip, country, phoneNum) => {
+  cy.get('#customer-email').type(email)
+  cy.get('input[name="firstname"]').type(firstName)
+  cy.get('input[name="lastname"]').type(lastName)
+  cy.get('input[name="company"]').type(company)
+  cy.get('input[name="street[0]"]').type(streetAddress)
+  cy.get('input[name="city"]').type(city)
+  cy.get('select[name="region_id"]').select(state)
+  cy.get('input[name="postcode"]').type(zip)
+  cy.get('select[name="country_id"]').select(country)
+  cy.get('input[name="telephone"]').type(phoneNum)
+})
   
