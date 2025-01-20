@@ -35,17 +35,16 @@ Cypress.Commands.add('editEmail', (email, password) => {
   if(email){
     cy.get('#email').type(email)
   }
-  if(password){
-    cy.get('#password').type(password)
-  }
+  cy.get('#password').type(password)
   cy.get('.save').click()
 
 })
 
 Cypress.Commands.add('ChangesPassword', (currentpassword, newpassword, confirmpassword) => {
 
-  cy.visit('/customer/account/edit/')
-  cy.get('#current-password').type(currentpassword)
+  if(currentpassword){
+    cy.get('#current-password').type(currentpassword)
+  }
   cy.get('#new-password').type(newpassword)
   cy.get('#confirm-password').type(confirmpassword)
   cy.get('.save').click()
