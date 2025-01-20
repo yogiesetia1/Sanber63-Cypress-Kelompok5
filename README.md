@@ -38,7 +38,8 @@ Negative test case :
 - Github Username :
 - ______________________________
 4. Rakhma Yuli Affiyanti
-- Task :
+- Task : Create an Account 
+
 - Github Username : rakhmayuli
 - ______________________________
 5. Tina Oktapiani
