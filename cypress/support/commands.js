@@ -7,22 +7,6 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 //proses login
 Cypress.Commands.add('login', (email, password) => {
@@ -32,6 +16,41 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get('#send2').click();
 });
 
+//Edit Account And Address - TINA OKTAPIANI
+
+Cypress.Commands.add('editUsername', (firstname, lastname) => {
+
+  cy.visit('/customer/account/edit/')
+  cy.get('#firstname').type(firstname)
+  cy.get('#lastname').type(lastname)
+  cy.get('.save').click()
+
+})
+
+Cypress.Commands.add('editEmail', (email, password) => {
+
+  cy.visit('/customer/account/edit/')
+  cy.get('#email').type(email)
+  cy.get('#password').type(password)
+  cy.get('.save').click()
+
+})
+
+Cypress.Commands.add('ChangesPassword', (currentpassword, newpassword, confirmpassword) => {
+
+  cy.visit('/customer/account/edit/')
+  cy.get('#current-password').type(currentpassword)
+  cy.get('#new-password').type(newpassword)
+  cy.get('#confirm-password').type(confirmpassword)
+  cy.get('.save').click()
+
+})
+
+Cypress.Commands.add('verifyErrorMessage', (message) => {
+  cy.get('[data-test="error"]').should(message)
+  
+})
+// End Tina Oktapiani
 
 
 // Proceed to checkout command section [do not edit!!]

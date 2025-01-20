@@ -1,0 +1,37 @@
+
+{
+    "validUser": {
+        "firstName":"Rakhma",
+        "lastName":"Yuli",
+        "firstNameMix":"Rakhma1",
+        "lastNameMix":"Yuli2",
+        "password": "Password123!",
+        "confirmPassword": "Password123!"
+    },
+
+    "invalidUser": {
+        "invalidEmail": "invalidemail.com",
+        "existingEmail": "dudu@gmail.com",
+        "firstNameMiss": "@QA63",
+        "lastNameMiss": "QA!"
+    },
+
+    "invalidPassword": {
+        "shortPassword": "Pass1!",
+        "missingSpecialChar": "password123"
+    },
+
+    "passwordUser": {
+        "weak": "Pas12345",
+        "medium": "Pass1234",
+        "strong": "Password!",
+        "veryStrong": "Password123!"
+    },
+
+    "passwordStrength": {
+        "weak": "Weak",
+        "medium": "Medium",
+        "strong": "Strong",
+        "veryStrong": "Very Strong"
+    }
+}
