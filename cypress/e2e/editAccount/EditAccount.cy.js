@@ -1,6 +1,6 @@
 describe('test dev', () => {
   beforeEach(() => {
-    cy.visit('/customer/account/edit/')
+    cy.visit('')
     
   })
 
