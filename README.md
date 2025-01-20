@@ -24,8 +24,8 @@ Negative test case :
 - ______________________________
 3. Novem Ardan Rohmadin
 - Task : Update shopping cart
-Skenario Pengujian:
-Positive test case :
+- Skenario Pengujian:
+- Positive test case :
 1. User pilih product dari daftar pilihan
 2. User pilih produk berdasarkan opsi ukuran
 3. User pilih produk berdasarkan opsi warna
@@ -33,7 +33,7 @@ Positive test case :
 5. User navigasi ke halaman shopping cart
 6. User mengubah kuantitas produk
 7. User menyimpan perubahan kuantitas
-Negative test case :
+- Negative test case :
 1. User pilih product dari daftar pilihan
 2. User pilih produk berdasarkan opsi ukuran
 3. User pilih produk berdasarkan opsi warna
