@@ -42,7 +42,9 @@ Cypress.Commands.add('inputAddress', (email, firstName, lastName, company, stree
   cy.get('#customer-email').type(email)
   cy.get('input[name="firstname"]').type(firstName)
   cy.get('input[name="lastname"]').type(lastName)
-  cy.get('input[name="company"]').type(company)
+  if (company) {
+    cy.get('input[name="company"]').type(company);
+  }
   cy.get('input[name="street[0]"]').type(streetAddress)
   cy.get('input[name="city"]').type(city)
   cy.get('select[name="region_id"]').select(state)
