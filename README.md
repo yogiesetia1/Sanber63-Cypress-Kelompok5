@@ -34,8 +34,18 @@ Negative test case :
 - Github Username : nesacris
 - ______________________________
 3. Novem Ardan Rohmadin
-- Task :
-- Github Username :
+- Task : Update shopping cart
+Skenario Pengujian:
+Positive test case :
+1. User pilih product dari daftar pilihan
+2. User pilih produk berdasarkan opsi ukuran
+3. User pilih produk berdasarkan opsi warna
+4. User tambahkan produk ke keranjang
+5. User navigasi ke halaman shopping cart
+6. User mengubah kuantitas produk
+7. User menyimpan perubahan kuantitas
+
+- Github Username : NovemArdan
 - ______________________________
 4. Rakhma Yuli Affiyanti
 - Task : Create an Account 
