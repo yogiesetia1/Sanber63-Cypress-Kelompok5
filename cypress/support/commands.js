@@ -51,6 +51,28 @@ Cypress.Commands.add('ChangesPassword', (currentpassword, newpassword, confirmpa
 
 })
 
+Cypress.Commands.add('ChangesAddress', (firstname, lastname, company, phoneNumber, StreetAddress1, StreetAddress2, StreetAddress3, City, State, PostalCode, Country) => {
+
+  if(firstname){
+    cy.get('#firstname').type(firstname)
+  }
+  if(lastname){
+    cy.get('#lastname').type(lastname)
+  }
+  
+  cy.get('#company').type(company)
+  cy.get('#telephone').type(phoneNumber)
+  cy.get('#street_1').type(StreetAddress1)
+  cy.get('#street_2').type(StreetAddress2)
+  cy.get('#street_3').type(StreetAddress3)
+  cy.get('#city').type(City)
+  cy.get('#region_id').select(State)
+  cy.get('#zip').type(PostalCode)
+  cy.get('#country').select(Country)
+  cy.get('.save').click()
+
+})
+
 Cypress.Commands.add('verifyErrorMessage', (message) => {
   cy.get('[data-test="error"]').should(message)
   
