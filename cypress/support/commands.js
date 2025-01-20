@@ -20,9 +20,12 @@ Cypress.Commands.add('login', (email, password) => {
 
 Cypress.Commands.add('editUsername', (firstname, lastname) => {
 
-  cy.visit('/customer/account/edit/')
-  cy.get('#firstname').type(firstname)
-  cy.get('#lastname').type(lastname)
+  if(firstname){
+    cy.get('#firstname').type(firstname)
+  }
+  if(firstname){
+    cy.get('#lastname').type(lastname)
+  }
   cy.get('.save').click()
 
 })
