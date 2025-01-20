@@ -8,7 +8,7 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
-//proses login
+//proses login - Anisah Mutmainah (Dilarang Edit!)
 Cypress.Commands.add('login', (email, password) => {
   cy.visit('https://magento.softwaretestingboard.com/customer/account/login');
   if (email) cy.get('#email').type(email);
