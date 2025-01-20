@@ -25,13 +25,15 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, password) => {
-  cy.visit('https://www.demoblaze.com'); // Kunjungi halaman utama
-  cy.get('#login2').should('be.visible').click(); // Klik tombol login untuk membuka modal
-  cy.get('#logInModal').should('be.visible'); // Verifikasi modal login muncul
-  cy.get('#loginusername').type(email); //isi email
-  cy.get('#loginpassword').type(password);
-  cy.get('button[onclick="logIn()"]').click(); // Klik tombol login
+  cy.visit('https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/'); // Kunjungi halaman utama
+  // cy.get('.header .authorization-link > a').click();  // Klik tombol login di header
+  // cy.get('#login-form').should('be.visible'); // Verifikasi form login muncul
+  cy.get('#email').type(email); // Isi email
+  cy.get('#pass').type(password); // Isi password
+  cy.get('#send2').click(); // Klik tombol login
+  // cy.get('.greet').should('contain', 'Welcome'); // Verifikasi login berhasil
 });
+
 
 
   
