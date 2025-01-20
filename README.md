@@ -33,6 +33,15 @@ Positive test case :
 5. User navigasi ke halaman shopping cart
 6. User mengubah kuantitas produk
 7. User menyimpan perubahan kuantitas
+Negative test case :
+1. User pilih product dari daftar pilihan
+2. User pilih produk berdasarkan opsi ukuran
+3. User pilih produk berdasarkan opsi warna
+4. User tambahkan produk ke keranjang
+5. User navigasi ke halaman shopping cart
+6. User memasukkan nilai kuantitas negatif
+7. User memasukkan nilai kuantitas nol
+8. User memasukkan nilai kuantitas huruf atau karakter huruf
 
 - Github Username : NovemArdan
 - ______________________________
