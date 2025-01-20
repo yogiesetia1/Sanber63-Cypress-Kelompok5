@@ -19,7 +19,18 @@ Pada Pengujian Fitur Login ini terdapat beberapa skenario pengujiannya yaitu :
 - Github Username : anisahmutmainah
 - ______________________________
 2. Nesa Cristin Natalia Batubara
-- Task :
+- Task : Fitur Choose Product
+Skenario Pengujian:
+Positive test case :
+1. User pilih product dari daftar pilihan
+2. ⁠User pilih product dari search bar (kalo ada) 
+3. ⁠User pilih product berasarkan variant A, B, C
+
+Negative test case : 
+1. User pilih product tanpa login
+2. ⁠User pilih product yang tidak tersedia
+3. ⁠User pilih product dengan mencari nama product yang salah
+
 - Github Username : nesacris
 - ______________________________
 3. Novem Ardan Rohmadin
