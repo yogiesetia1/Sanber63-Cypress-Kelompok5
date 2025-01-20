@@ -22,8 +22,9 @@ describe('Verify product can proceed to checkout', () => {
     cy.get('#customer-email').should('be.visible')
    
     // Muat data dari file fixture
+    // Muat data dari file fixture
     cy.fixture('userAddress.json').then((user) => {
-        cy.inputAddress(user.email, user.firtName, user.lastName, user.company, user.streetAddress, user.city, user.state, user.zipCode, user.phoneNumber)
-    })
+      cy.inputAddress(user.email, user.firstName, user.lastName, user.company, user.streetAddress, user.city, user.state, user.zipCode, user.country, user.phoneNumber)
+  })
 })
 })
