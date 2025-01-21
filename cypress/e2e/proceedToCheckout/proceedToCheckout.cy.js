@@ -305,4 +305,74 @@ describe('Verify shipping process failed - negative case', () => {
         cy.contains('The shipping method is missing. Select the shipping method and try again.').should('be.visible');
 
     })
+    it('Edit ship to address and confirm success checkout - positive case', () => {
+        // add product to cart to checkout
+        cy.addProduct()
+        
+        // Verifikasi aksi setelah klik
+        cy.url().should('include', '/checkout/#shipping')
+
+        cy.get('#customer-email').should('be.visible')
+       
+        // Muat data dari file fixture
+        cy.fixture('userAddress.json').then((user) => {
+            cy.inputAddress(user.email, user.firstName, user.lastName, user.company, user.streetAddress, user.city, user.state, user.zipCode, user.country, user.phoneNumber)
+        })
+
+        cy.xpath("//input[@value='tablerate_bestway']").click()
+        cy.xpath("//button[@class='button action continue primary']").click()
+
+        // Verifikasi aksi setelah klik
+        cy.url().should('include', '/checkout/#payment')
+        cy.get('.billing-address-details').should('be.visible')
+
+        // edit ship to address
+        cy.xpath("//div[@class='ship-to']//button[@class='action action-edit']").click()
+        cy.xpath("//div[@name='shippingAddress.firstname']//input[@name='firstname']").type(' alia')
+        cy.xpath("//button[@class='button action continue primary']").click()
+
+        // verifikasi keberhasilan hasil update
+        cy.xpath("//div[@class='ship-to']/div[@class='shipping-information-content']").should('be.visible')
+        .contains('Tatyana alia')
+        cy.xpath("//span[.='Place Order']").click()
+
+        // verify success order
+        cy.url().should('include', '/checkout/onepage/success/')
+        cy.contains('Thank you for your purchase!').should('be.visible')
+
+    })
+    it('Edit ship method and confirm success checkout - Positive case', () => {
+        // add product to cart to checkout
+        cy.addProduct()
+        
+        // Verifikasi aksi setelah klik
+        cy.url().should('include', '/checkout/#shipping')
+
+        cy.get('#customer-email').should('be.visible')
+       
+        // Muat data dari file fixture
+        cy.fixture('userAddress.json').then((user) => {
+            cy.inputAddress(user.email, user.firstName, user.lastName, user.company, user.streetAddress, user.city, user.state, user.zipCode, user.country, user.phoneNumber)
+        })
+
+        cy.xpath("//input[@value='tablerate_bestway']").click()
+        cy.xpath("//button[@class='button action continue primary']").click()
+
+        // Verifikasi aksi setelah klik
+        cy.url().should('include', '/checkout/#payment')
+        cy.get('.billing-address-details').should('be.visible')
+
+        // edit ship to address
+        cy.xpath("//div[@class='ship-via']//button[@class='action action-edit']").click()
+        cy.clickButton('.opc-block-shipping-information')
+        cy.xpath("//button[@class='button action continue primary']").click()
+
+        // verifikasi keberhasilan hasil update
+        cy.xpath("//div[@class='ship-via']//span[@class='value']").should('be.visible')
+        .contains('Flat Rate-Fixed')
+
+        // verify success order
+        cy.url().should('include', '/checkout/onepage/success/')
+        cy.contains('Thank you for your purchase!').should('be.visible')
+    })
   })
